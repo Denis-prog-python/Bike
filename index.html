@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир велосипедов</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .bike-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .bike-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 30%;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .bike-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .bike-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .bike-card-content {
+            padding: 1rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .bike-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мир велосипедов</h1>
+        <p>Откройте для себя радость велоспорта</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#types">Типы велосипедов</a></li>
+            <li><a href="#benefits">Польза</a></li>
+            <li><a href="#maintenance">Уход</a></li>
+            <li><a href="#routes">Маршруты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Добро пожаловать в мир велосипедов!</h2>
+            <p>Велосипед - это не просто средство передвижения, это стиль жизни, спорт и отличный способ поддерживать себя в форме. На этом сайте вы найдете всю необходимую информацию о различных типах велосипедов, их преимуществах и уходе за ними.</p>
+            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Велосипедист в горах" style="width:100%; border-radius:8px; margin:1rem 0;">
+        </section>
+
+        <section id="types">
+            <h2>Типы велосипедов</h2>
+            <div class="bike-types">
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Шоссейный велосипед">
+                    <div class="bike-card-content">
+                        <h3>Шоссейные</h3>
+                        <p>Легкие и быстрые велосипеды для асфальтированных дорог. Идеальны для длительных поездок и соревнований.</p>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Горный велосипед">
+                    <div class="bike-card-content">
+                        <h3>Горные (MTB)</h3>
+                        <p>Прочные велосипеды с амортизацией для бездорожья. Подходят для трейлов, даунхилла и кросс-кантри.</p>
+                    </div>
+                </div>
+
+                <div class="bike-card">
+                    <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Городской велосипед">
+                    <div class="bike-card-content">
+                        <h3>Городские</h3>
+                        <p>Удобные и практичные велосипеды для ежедневных поездок по городу. Часто имеют багажник и защиту цепи.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits">
+            <h2>Польза велоспорта</h2>
+            <ul>
+                <li>Укрепление сердечно-сосудистой системы</li>
+                <li>Развитие мышц ног, спины и пресса</li>
+                <li>Снижение стресса и улучшение настроения</li>
+                <li>Экологичный вид транспорта</li>
+                <li>Экономия на бензине и общественном транспорте</li>
+            </ul>
+        </section>
+
+        <section id="maintenance">
+            <h2>Базовый уход за велосипедом</h2>
+            <p>Регулярное обслуживание продлит срок службы вашего велосипеда:</p>
+            <ol>
+                <li>Чистите цепь и смазывайте ее каждые 100-200 км</li>
+                <li>Проверяйте давление в шинах перед каждой поездкой</li>
+                <li>Регулируйте тормоза по мере износа колодок</li>
+                <li>Раз в сезон проверяйте состояние всех болтов и соединений</li>
+                <li>Храните велосипед в сухом месте</li>
+            </ol>
+        </section>
+
+        <section id="routes">
+            <h2>Популярные веломаршруты</h2>
+            <p>Откройте для себя новые места с этими идеями для поездок:</p>
+            <ul>
+                <li>Городские парки и набережные</li>
+                <li>Сельские дороги с живописными видами</li>
+                <li>Специальные велодорожки в вашем городе</li>
+                <li>Горные трейлы (для MTB)</li>
+                <li>Длинные шоссейные маршруты между городами</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2023 Мир велосипедов | Все права защищены</p>
+        <p>Сайт создан для любителей велоспорта</p>
+    </footer>
+</body>
+</html>
